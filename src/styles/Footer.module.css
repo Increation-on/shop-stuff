@@ -54,6 +54,7 @@
 @media (max-width: 390px) {
   .footer {
     flex-direction: column;
+    bottom: -170px;
   }
   .rights {
     font-size: 12px;
