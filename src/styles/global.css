@@ -135,3 +135,9 @@ input {
   align-items: center;
   justify-content: center;
 }
+
+@media (max-width: 350px) {
+  .app {
+    width: 95%;
+  }
+}
