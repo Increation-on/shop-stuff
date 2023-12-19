@@ -1,0 +1,29 @@
+.profile {
+  flex-grow: 1;
+  padding: 24px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  text-align: center;
+}
+
+.group {
+  width: 60%;
+  background: #212123;
+  border-radius: 8px;
+  color: var(--light);
+  padding: 12px 24px;
+  margin-bottom: 10px;
+}
+
+.group input {
+  width: 100%;
+}
+
+.submit {
+  margin-top: 10px;
+  width: 60%;
+}

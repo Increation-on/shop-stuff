@@ -1,0 +1,352 @@
+.home {
+  position: relative;
+  flex-grow: 1;
+}
+
+.title {
+  font-weight: 900;
+  font-size: 70px;
+  line-height: 145px;
+  text-transform: uppercase;
+  color: var(--bg);
+  text-align: center;
+}
+
+.product {
+  position: relative;
+  padding-left: 42px;
+  display: flex;
+  align-items: stretch;
+  margin-top: 9px;
+}
+
+.subtitle {
+  line-height: 20px;
+  text-transform: uppercase;
+  color: var(--sea);
+}
+
+.head {
+  font-weight: 700;
+  font-size: 2vw;
+  line-height: 51px;
+  text-transform: uppercase;
+  color: var(--light);
+  max-width: 500px;
+  margin: 10px 0 24px 0;
+}
+
+.image {
+  position: relative;
+  flex-grow: 1;
+  height: 250px;
+}
+
+.image img {
+  position: absolute;
+  bottom: -15%;
+  right: 10%;
+  max-width: unset;
+}
+
+.banner {
+  display: flex;
+  width: 100%;
+  height: 570px;
+}
+
+.left {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+}
+
+.left:before,
+.left:after {
+  content: "";
+  display: block;
+  position: absolute;
+}
+
+.left:before {
+  width: 204px;
+  height: 170px;
+  left: -25px;
+  bottom: 74px;
+  background: url(../images/shoe.png) no-repeat center/contain;
+}
+
+.left:after {
+  width: 269px;
+  height: 151px;
+  right: -25px;
+  bottom: -25px;
+  background: url(../images/devices.png) no-repeat center/contain;
+}
+
+.content {
+  color: var(--violet);
+  font-weight: 300;
+  font-size: 70px;
+  line-height: 85px;
+  text-align: center;
+}
+
+.content span {
+  line-height: 183px;
+  font-size: 150px;
+  display: block;
+}
+
+.more {
+  margin-top: 27px;
+}
+
+.right {
+  width: 50%;
+  position: relative;
+}
+
+.discount {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: var(--bg);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 24px;
+}
+
+.discount span {
+  color: var(--violet);
+  font-weight: 700;
+}
+
+.image_hidden {
+  visibility: hidden;
+}
+
+/* burger menu start !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+.wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: var(--dark);
+  width: 30%;
+  height: 100%;
+  z-index: 97;
+  padding: 24px;
+  text-align: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(33, 33, 35, 0.8);
+  z-index: 95;
+}
+
+.burger_button {
+  width: 35px;
+  height: 35px;
+  background-color: white;
+  border-radius: 2px;
+  display: none;
+  position: absolute;
+  cursor: pointer;
+}
+
+.close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  z-index: 9;
+  cursor: pointer;
+}
+
+.close svg {
+  width: 25px;
+  height: 25px;
+  stroke: var(--dark-sea);
+}
+
+.close:hover svg {
+  stroke: #fff;
+}
+
+.burger_title {
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.menu {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+}
+
+.link {
+  color: var(--dark-sea);
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: capitalize;
+}
+
+.link:hover {
+  color: var(--white);
+}
+
+.link.active {
+  color: var(--violet);
+}
+
+.footer {
+  position: absolute;
+  width: 85%;
+  padding-bottom: 10px;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+@media (max-width: 1020px) {
+  .burger_button {
+    display: flex;
+    flex-direction: column;
+    color: black;
+    justify-content: center;
+    text-align: center;
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 800px) {
+  .wrapper {
+    width: 60%;
+  }
+
+  .image img {
+    position: absolute;
+    bottom: -15%;
+    right: 10%;
+    max-width: unset;
+  }
+}
+
+@media (max-width: 635px) {
+  .title {
+    font-size: 50px;
+    line-height: 60px;
+  }
+  .image img {
+    max-width: 350px;
+  }
+  .head {
+    font-size: 2.5vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .wrapper {
+    width: 100%;
+  }
+}
+
+@media (max-width: 530px) {
+  .title {
+    font-size: 8vw;
+    line-height: 50px;
+  }
+  .image img {
+    max-width: 70vw;
+  }
+}
+
+@media (max-width: 400px) {
+  .head {
+    font-size: 4.5vw;
+    line-height: 30px;
+  }
+  .image {
+    position: relative;
+    flex-grow: 1;
+    height: 230px;
+  }
+}
+
+/* burger menu end !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+/* banner media !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+@media (max-width: 975px) {
+  .banner {
+    flex-direction: column;
+  }
+  .left {
+    width: 100%;
+  }
+  .right {
+    width: 100%;
+    position: relative;
+    height: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .more{
+    margin-bottom: 5px;
+  }
+}
+
+@media (max-width: 720px) {
+  .left:before {
+    width: 170px;
+    height: 170px;
+    left: -25px;
+    bottom: 74px;
+    background: url(../images/shoe.png) no-repeat center/contain;
+  }
+
+  .left:after {
+    width: 200px;
+    height: 151px;
+    right: -25px;
+    bottom: -25px;
+    background: url(../images/devices.png) no-repeat center/contain;
+  }
+
+  .content {
+    color: var(--violet);
+    font-weight: 300;
+    font-size: 60px;
+    line-height: 85px;
+    text-align: center;
+  }
+
+  .content span {
+    line-height: 120px;
+    font-size: 120px;
+    display: block;
+  }
+}
+
+@media (max-width: 600px) {
+  .left:before {
+    width: 120px;
+    bottom: -30px;
+
+  }
+  .left::after{
+    width: 150px;
+    bottom: -40px;
+  }
+}
