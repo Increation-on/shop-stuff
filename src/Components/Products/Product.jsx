@@ -16,8 +16,6 @@ const Product = (item) => {
     const [currentImage, setCurrentImage] = useState();
     const [currentSize, setCurrentSize] = useState();
 
-    const [showCloud, setShowCloud] = useState(false);
-
     const addToCart = () => {
         dispatch(addItemToCart(item));
     };

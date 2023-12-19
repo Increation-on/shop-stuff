@@ -60,3 +60,17 @@
     justify-content: space-between;
   }
 }
+
+@media (max-width: 380px) {
+  .filter {
+    max-width: 100%;
+    justify-content: space-between;
+    word-wrap: break-word;
+  }
+  .filter {
+    width:auto;
+  }
+  .filter input {
+    width: 80%;
+  }
+}
